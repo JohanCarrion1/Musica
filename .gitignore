@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio
+.idea/
+*.iml
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Firmas (nunca subir el keystore)
+*.jks
+*.keystore
+
+# APK / AAB generados
+*.apk
+*.aab
+
+# Sistema
+.DS_Store
+Thumbs.db
