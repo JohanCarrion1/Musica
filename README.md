@@ -5,8 +5,8 @@ App Android nativa (Kotlin + Jetpack Compose) que reproduce la música guardada 
 ## Funciones
 
 - Lee la biblioteca del dispositivo con `MediaStore`
-- Lista de canciones con carátulas (Coil) y buscador por título, artista o álbum
-- Controles: play/pausa, anterior/siguiente, aleatorio, repetir y volumen
+- Lista de canciones con carátulas (Coil) y buscador (ícono de lupa) por título, artista o álbum
+- Mini reproductor abajo: play/pausa, anterior/siguiente, aleatorio, repetir y barra de progreso delgada
 - Reproducción en segundo plano con Media3 (ExoPlayer + MediaSession)
 
 ## Requisitos
@@ -34,7 +34,8 @@ App Android nativa (Kotlin + Jetpack Compose) que reproduce la música guardada 
     └── src/main/
         ├── AndroidManifest.xml
         ├── java/com/onda/music/
-        │   ├── MainActivity.kt      # UI (Compose), permisos y lectura de canciones
+        │   ├── MainActivity.kt      # Actividad, permisos, lectura de canciones y filas
+        │   ├── OndaUi.kt            # Pantalla (Compose): lista, buscador, mini reproductor
         │   └── PlaybackService.kt   # Servicio de reproducción y notificación
         └── res/
             ├── drawable/ic_launcher_foreground.xml   # ícono de la app

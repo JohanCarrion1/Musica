@@ -4,22 +4,30 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Órbita abierta -->
-    <path
-        android:pathData="M24,54 A30,30 0 1,1 84,54 A30,30 0 1,1 24,54"
-        android:strokeColor="#FFB443"
-        android:strokeWidth="5.5" />
+    <!-- Todo el dibujo se reduce al 65 % alrededor del centro (54,54) -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.65"
+        android:scaleY="0.65">
 
-    <!-- Triángulo de play -->
-    <path
-        android:pathData="M45,38 L70,54 L45,70 Z"
-        android:fillColor="#FFD98A"
-        android:strokeColor="#FFD98A"
-        android:strokeWidth="7"
-        android:strokeLineJoin="round" />
+        <!-- Órbita abierta -->
+        <path
+            android:pathData="M24,54 A30,30 0 1,1 84,54 A30,30 0 1,1 24,54"
+            android:strokeColor="#FFB443"
+            android:strokeWidth="5.5" />
 
-    <!-- Punto -->
-    <path
-        android:pathData="M80,30 m-4,0 a4,4 0 1,1 8,0 a4,4 0 1,1 -8,0"
-        android:fillColor="#F7E8C8" />
+        <!-- Triángulo de play -->
+        <path
+            android:pathData="M45,38 L70,54 L45,70 Z"
+            android:fillColor="#FFD98A"
+            android:strokeColor="#FFD98A"
+            android:strokeWidth="7"
+            android:strokeLineJoin="round" />
+
+        <!-- Punto -->
+        <path
+            android:pathData="M80,30 m-4,0 a4,4 0 1,1 8,0 a4,4 0 1,1 -8,0"
+            android:fillColor="#F7E8C8" />
+    </group>
 </vector>
